@@ -1,16 +1,17 @@
 package com.severo.ecommerce.checkout.entity;
 
+import lombok.Builder;
 import lombok.Data;
-import org.springframework.data.annotation.Id;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
+import javax.persistence.*;
 
+@Builder
 @Data
 @Entity
 public class CheckoutEntity {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     @Column
