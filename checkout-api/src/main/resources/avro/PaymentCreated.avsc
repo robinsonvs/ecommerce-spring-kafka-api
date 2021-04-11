@@ -8,6 +8,10 @@
             "type": ["string"]
         },
         {
+            "name": "checkoutStatus",
+            "type": ["string"]
+        },
+        {
             "name": "paymentCode",
             "type": ["string"]
         }
